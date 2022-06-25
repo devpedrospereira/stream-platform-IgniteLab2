@@ -9,24 +9,23 @@ import {
 import "@vime/core/themes/default.css";
 import { useGetLessonBySlugQuery } from "../graphql/generated";
 
-
 interface VideoProps {
     lessonSlug: string;
 }
 
 export function Video(props: VideoProps) {
-    const {data} = useGetLessonBySlugQuery({
+    const { data } = useGetLessonBySlugQuery({
         variables: {
             slug: props.lessonSlug,
-        }
+        },
     });
 
     if (!data || !data.lesson) {
-        return(
+        return (
             <div className="flex-1">
                 <p>Carregando...</p>
             </div>
-        )
+        );
     }
 
     return (
@@ -40,7 +39,6 @@ export function Video(props: VideoProps) {
                 </div>
             </div>
 
-
             <div className="p-8 max-w-[1100px] mx-auto">
                 <div className="flex items-start gap-16">
                     <div className="flex-1">
@@ -53,11 +51,11 @@ export function Video(props: VideoProps) {
 
                         {data.lesson.teacher && (
                             <div className="flex items-center gap-4 mt-6 flex items-center">
-                            <img
-                                className="h-16 w-16 rounded-full border-2 border-blue-500"
-                                src={data.lesson.teacher.avatarURL}
-                                alt="avatar GitHub"
-                            />
+                                <img
+                                    className="h-16 w-16 rounded-full border-2 border-blue-500"
+                                    src={data.lesson.teacher.avatarURL}
+                                    alt="avatar GitHub"
+                                />
 
                                 <div className="leading-relaxed">
                                     <strong className="font-bold text-2xl block">
@@ -67,9 +65,8 @@ export function Video(props: VideoProps) {
                                         {data.lesson.teacher.bio}
                                     </span>
                                 </div>
-                        </div>
+                            </div>
                         )}
-                        
                     </div>
 
                     <div className="flex flex-col gap-4">

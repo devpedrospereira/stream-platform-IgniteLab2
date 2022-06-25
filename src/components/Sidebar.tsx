@@ -1,15 +1,13 @@
 import { useGetLessonsQuery } from "../graphql/generated";
 import { Lesson } from "./Lesson";
 
-
 export function Sidebar() {
-    const { data } = useGetLessonsQuery()
+    const { data } = useGetLessonsQuery();
 
-    console.log(data)
-    console.log(data)
-    console.log(data)
-    console.log(data)
-
+    console.log(data);
+    console.log(data);
+    console.log(data);
+    console.log(data);
 
     return (
         <aside className="w-[348px] bg-gray-700 p-6 border-l boder-gray-600">
@@ -19,7 +17,7 @@ export function Sidebar() {
 
             <div className="flex flex-col gap-8 ">
                 {data?.lessons.map((lesson) => {
-                    return(
+                    return (
                         <Lesson
                             key={lesson.id}
                             title={lesson.title}
@@ -33,4 +31,3 @@ export function Sidebar() {
         </aside>
     );
 }
-
