@@ -1,6 +1,6 @@
 import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
-import CodeMockup from "../../assets/images/code-mockup.png";
+import CodeMockup from "../assets/code-mockup.png";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 import { useGetLessonsQuery } from "../graphql/generated";
@@ -81,7 +81,6 @@ export function Subscribe() {
                 </div>
             </div>
 
-            {/* <CodeMockup/> */}
             <img src={CodeMockup} alt="mockup de códigos" className="mt-10" />
         </div>
     );
