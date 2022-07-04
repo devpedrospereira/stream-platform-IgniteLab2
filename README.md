@@ -7,7 +7,7 @@
 
 <img src="https://i.imgur.com/rrFBkCu.png">
 
-# Acesse o projeto: <a href=""https://stream-platform.vercel.app/"> https://stream-platform.vercel.app/</a> <br/>
+# Acesse o projeto: <a href="https://stream-platform.vercel.app/"> https://stream-platform.vercel.app/</a> <br/>
 
 # 🧠 Sobre
 
