@@ -7,6 +7,8 @@
 
 <img src="https://i.imgur.com/rrFBkCu.png">
 
+# Acesse o projeto: <a href=""https://stream-platform.vercel.app/"> https://stream-platform.vercel.app/</a> <br/>
+
 # 🧠 Sobre
 
 Ignite Lab é a 2º edição desse evento oferecido pela [Rocketseat](https://rocketseat.com.br) para a comunidade exclusiva de alunos programa de especialização Ignite.
